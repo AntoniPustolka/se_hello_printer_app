@@ -13,6 +13,9 @@ run:
 lint:
 	flake8 hello_world test
 
+docker_build:
+		decker build -t hello-world-printer
+
 USERNAME=antonipustolka
 TAG=$(USERNAME)/hello-world-printer
 
