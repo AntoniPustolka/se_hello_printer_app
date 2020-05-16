@@ -16,6 +16,12 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
     $ pip install -r requirements.txt
     $ pip install -r test_requirements.txt
 
+    # Aby wlaczyc virtualenv
+    $ source /home/tester/.virtualenvs/wsb-simple-flask-app/bin/activate
+
+    # z MakeFile
+    $ make deps
+
   Sprawdź: `documentację virtualenvwrappera <https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html>`_ oraz `biblioteki flask <http://flask.pocoo.org>`_.
 
 - Uruchamianie applikacji:
@@ -27,6 +33,9 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
     # albo:
     $ PYTHONPATH=. FLASK_APP=hello_world flask run
+
+    # z MakeFile
+    $ make run
 
 - Uruchamianie testów (see: http://doc.pytest.org/en/latest/capture.html):
 
@@ -48,8 +57,6 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
     $ deactivate
 
 - Integracja z TravisCI:
-
-# Zaloguj sie do TravisCI
 
   ::
 
