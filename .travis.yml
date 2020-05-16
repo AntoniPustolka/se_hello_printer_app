@@ -19,3 +19,5 @@ deploy:
   provider: heroku
   app: thawing-dawn-49765
   api_key: ${HEROKU_API_KEY}
+
+# Samll update
