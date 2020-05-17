@@ -10,6 +10,10 @@ pipeline {
             steps {
 	            sh 'make test'
            }
+        stage('Test') {
+            steps {
+              sh 'Linter'
+           }
         }
     }
 }
