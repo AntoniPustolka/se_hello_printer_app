@@ -1,4 +1,4 @@
 **/*.pyc
 .cache
 test_results.xml
-coverage.xml i .coverage
+coverage.xml | .coverage
