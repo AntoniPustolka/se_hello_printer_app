@@ -12,6 +12,12 @@ deps:
 test:
 	PYTHONPATH=. py.test  --verbose -s
 
+test_cov:
+	PYTHONPATH=. py.test --verbose -s --cov=.
+
+test_xunit:
+	PYTHONPATH=. py.test -s --cov=. --cov-report xml --junit-xml=test_results.xml
+
 lint:
 	flake8 hello_world test
 
